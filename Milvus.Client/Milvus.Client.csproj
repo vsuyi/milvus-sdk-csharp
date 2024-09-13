@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <!-- We target net462 directly since the net462 version of Grpc.Net.Client automatically uses WinHttpHandler -->
-    <TargetFrameworks>net6.0;netstandard2.0;net462</TargetFrameworks>
+    <TargetFrameworks>net6.0;netstandard2.0;net462;net8</TargetFrameworks>
     <TargetFrameworks Condition="'$(DeveloperBuild)' == 'True'">net6.0</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <AnalysisMode>All</AnalysisMode>
