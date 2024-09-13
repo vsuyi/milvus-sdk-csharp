@@ -281,6 +281,7 @@ public abstract class FieldData
         Verify.NotNullOrWhiteSpace(fieldName);
         Verify.GreaterThan(dimension, 0);
 
+        dimension = Math.Max(dimension / 8, 1);
         List<ReadOnlyMemory<byte>> byteArray = new((int)Math.Ceiling((double)bytes.Length / dimension));
 
         while (bytes.Length > dimension)
